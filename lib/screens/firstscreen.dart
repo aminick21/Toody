@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
+import 'package:toody/screens/secondscreen.dart';
 class FirstScreen extends StatelessWidget {
   const FirstScreen({Key? key}) : super(key: key);
   @override
@@ -38,7 +38,7 @@ class FirstScreen extends StatelessWidget {
             height: 50,
           ),
           TextButton(onPressed: (){
-            //Navigator.push(context, MaterialPageRoute(builder:(context)=>SecondScreen(),),);
+            Navigator.push(context, MaterialPageRoute(builder:(context)=>SecondScreen(),),);
           },
             child: Text("Get Started",
               style: TextStyle(
