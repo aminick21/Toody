@@ -10,8 +10,9 @@ class LowerContainer extends StatefulWidget {
 class _LowerContainerState extends State<LowerContainer> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-
+    return Expanded(
+      child: Container(
+      ),
     );
   }
 }
