@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:toody/model/taskdata.dart';
 import 'package:toody/widget/fab.dart';
 import 'package:toody/widget/lowercontainer.dart';
 import 'package:toody/widget/uppercontainer.dart';
@@ -16,19 +17,16 @@ class SecondScreen extends StatefulWidget {
 class _SecondScreenState extends State<SecondScreen> {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (BuildContext context) {},
-      child: SafeArea(
-        child: Scaffold(
-          floatingActionButton:MyFloatingActionButton() ,
-          body: Column(
-            children: [
-              UpperContainer(),
-              LowerContainer(),
-            ],
-          ),
-
+    return SafeArea(
+      child: Scaffold(
+        floatingActionButton:MyFloatingActionButton() ,
+        body: Column(
+          children: [
+            UpperContainer(),
+            LowerContainer(),
+          ],
         ),
+
       ),
     );
   }

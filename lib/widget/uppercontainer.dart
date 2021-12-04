@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:toody/model/taskdata.dart';
 
 class UpperContainer extends StatefulWidget {
   const UpperContainer({Key? key}) : super(key: key);
@@ -31,7 +33,7 @@ class _UpperContainerState extends State<UpperContainer> {
                           fontWeight: FontWeight.w800 )
                   ),
                   TextSpan(
-                      text: "Today you have tasks.",
+                      text: "Today you ${Provider.of<TaskData>(context).tasks.length} have tasks.",
                       style: TextStyle(color: Colors.black))
                 ],),),
               Image(
