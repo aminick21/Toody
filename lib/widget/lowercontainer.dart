@@ -21,9 +21,12 @@ class _LowerContainerState extends State<LowerContainer> {
             final task =taskDataObject.tasks[index];
             return TaskTile(text:task.taskName,
               isChecked:task.status,
-            checkBoxCallBack: (checkboxState){
+            checkBoxCallBack: (checkBoxState){
               taskDataObject.updateTask(task);
-            },);
+            },
+              closeCallBack: (){
+             taskDataObject.deleteTask(task);
+              },);
           },
             itemCount:taskDataObject.tasks.length ,),
         );
