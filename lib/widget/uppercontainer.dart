@@ -33,7 +33,7 @@ class _UpperContainerState extends State<UpperContainer> {
                           fontWeight: FontWeight.w800 )
                   ),
                   TextSpan(
-                      text: "Today you ${Provider.of<TaskData>(context).tasks.length} have tasks.",
+                      text: "Today you have ${Provider.of<TaskData>(context).tasks.length} tasks.",
                       style: TextStyle(color: Colors.black))
                 ],),),
               Image(
